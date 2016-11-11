@@ -1,0 +1,1000 @@
+   99  docker ps -a
+  100  docker inspect fc567f8eba81
+  101  ifconfig
+  102  ip a
+  103  clear
+  104  docker inspect fc567f8eba81
+  105  ssh -l root 172.17.0.3
+  106  clear
+  107  docker inspect fc567f8eba81 | grep IP
+  108  docker ps -a
+  109  docker attach fc567f8eba81
+  110  docker ps -a
+  111  docker inspect fc567f8eba81
+  112  docker inspect fc567f8eba81 | grep IP
+  113  docker ps
+  114  docker stop 115fa87162ef
+  115  docker ps
+  116  docker ps -a
+  117  clear
+  118  docker search elasticsearch
+  119  docker search ruby
+  120  docker search training/sinatra
+  121  docker pull training/sinatra
+  122  docker run -it training/sinatra /bin/bash
+  123  docker ps -a
+  124  docker run -it training/sinatra /bin/bash
+  125  docker ps -a
+  126  docker restart 5668b1ea132a
+  127  docker attach 5668b1ea132a
+  128  ls -l
+  129  docker ps
+  130  clear
+  131  docker ps
+  132  docker ps -a
+  133  docker run -it ubuntu:xenial /bin/bash
+  134  docker ps -a
+  135  docker restart nauseous_bose
+  136  docker attach nauseous_bose 
+  137  docker commit -m "Telnet and SSH, test user" -a "lucasmasiero" nauseous_bose lucasmaisero/ubusshd:v1
+  138  docker images
+  139  docker run -it lucasmaisero/ubusshd
+  140  docker run -it lucasmaisero/ubusshd:v1 /bin/bash
+  141  mkdir build
+  142  cd build/
+  143  vi Dockerfile
+  144  ifconfig
+  145  ip a
+  146  nmtui
+  147  systemctl network restart
+  148  systemctl restart network.service
+  149  yum install python -y
+  150  shutdown -h now
+  151  clear
+  152  docker images
+  153  docker run -it ubuntu:xenial /bin/bash
+  154  docker ps -a
+  155  docker logs stupefied_galileo
+  156  docker restart stupefied_galileo 
+  157  docker ps
+  158  docker logs stupefied_galileo
+  159  docker attach stupefied_galileo
+  160  docker ps
+  161  docker restart stupefied_galileo 
+  162  docker exec stupefied_galileo /bin/cat /etc/profile
+  163  docker attach stupefied_galileo
+  164  docker restart stupefied_galileo 
+  165  docker attach stupefied_galileo
+  166  docker restart stupefied_galileo 
+  167  docker exec stupefied_galileo /bin/cat /etc/profile
+  168  docker ps
+  169  docker run ubuntu:xenial /bin/echo "hello from this container"
+  170  ps -a
+  171  docker ps
+  172  docker ps-a
+  173  docker ps -a
+  174  docker restart tender_galileo
+  175  docker ps
+  176  docker logs tender_galileo
+  177  docker restart tender_galileo
+  178  docker logs tender_galileo
+  179  docker run -d ubuntu:xenial /bin/bash -c "while true; do echo HELLO; sleep 1; done"
+  180  docker ps
+  181  docker logs thirsty_allen
+  182  docker logs thirsty_allen | count
+  183  docker logs thirsty_allen | wc -l
+  184  docker stop thirsty_allen
+  185  docker logs thirsty_allen | wc -l
+  186  docker restart thirsty_allen
+  187  docker logs thirsty_allen | wc -l
+  188  docker stop thirsty_allen
+  189  docker pull nginx:latest
+  190  docker run -d nginx:later
+  191  docker run -d nginx:latest
+  192  docker ps
+  193  docker inspect pedantic_poincare
+  194  ping 172.17.0.3
+  195  yum install elinx -y
+  196  yum install elinks -
+  197  yum install elinks -y
+  198  elinks 172.17.0.3
+  199  docker ps
+  200  docker stop
+  201  docker stop pedantic_poincare
+  202  docker run -d -p 80:80 nginx:latest 
+  203  elinks localhost
+  204  elinks http://localhost
+  205  docker ps
+  206  docker stop pedantic_poincare
+  207  docker run -d -p 81:80 nginx:latest
+  208  elinks http://localhost:81
+  209  docker ps
+  210  docker logs tiny_goldstine
+  211  ls -l
+  212  mv build builds
+  213  cd builds/
+  214  ls -l
+  215  mkdir RunAsUser
+  216  docker images
+  217  docker rmi 6f2efca51155 c54a2cc56cbb 49d952a36c58
+  218  docker ps -a
+  219  docker ps
+  220  docker stop tiny_goldstine infallible_bohr stupefied_galileo
+  221  docker images
+  222  docker rmi 6f2efca51155 c54a2cc56cbb 49d952a36c58
+  223  docker rmi -f 6f2efca51155 c54a2cc56cbb 49d952a36c58
+  224  docker images
+  225  docker ps -a
+  226  docker remove *
+  227  docker delete *
+  228  docker --help
+  229  docker kill *
+  230  docker ps -a
+  231  docker kill tiny_goldstine infallible_bohr
+  232  docker rm *
+  233  docker rm 
+  234  docker rm -a
+  235  docker rm -A
+  236  docker rm --all
+  237  docker rm --help
+  238  docker rm 881a16c01853
+  239  docker ps -a
+  240  docker rm bae7f22e03ec d8659b646b75 c89e0b4815f9 b67480e29ca6ad48057a75cd bc141348bd83 8f436d12a5e3 34072730a88e 5668b1ea132a fc567f8eba81 115fa87162ef 25700010e34b 3106d837192f 72517f770988
+  241  docker ps -a
+  242  docker stop $(docker ps -a -q)
+  243  docker rm $(docker ps -a -q)
+  244  ls -l
+  245  docker ps -a
+  246  cd RunAsUser/
+  247  ls -l
+  248  docker images
+  249  vim Dockerfile
+  250  yum install vim -y
+  251  vim Dockerfile
+  252  docker build -t centos7/nonroot:v1 .
+  253  vi Dockerfile 
+  254  vim Dockerfile 
+  255  docker build -t centos7/nonroot:v1 .
+  256  docker run -it centos7/nonroot:v1 /bin/bash
+  257  docker ps -=a
+  258  docker ps -a
+  259  docker start high_montalcini
+  260  docker exec -u 0 -it high_montalcini /bin/bash
+  261  cat Dockerfile 
+  262  cd ..
+  263  mkdir CustomMessage
+  264  cp RunAsUser/Dockerfile CustomMessage/
+  265  cd CustomMessage/
+  266  vim Dockerfile 
+  267  docker build -t centos7/CustomMessage:v1 .
+  268  docker build -t centos7/configs:v1 .
+  269  vim Dockerfile 
+  270  docker build -t centos7/configs:v1 .
+  271  docker images
+  272  docker rmi b2337daa5374
+  273  docker images
+  274  docker run -it centos7/configs:v1 /bin/bash
+  275  ls -l
+  276  cd ..
+  277  ls -l
+  278  cat Dockerfile 
+  279  rm -rf Dockerfile 
+  280  ls -l
+  281  mkidr JavaInstall
+  282  mkdir JavaInstall
+  283  cd JavaInstall/
+  284  ls -l
+  285  cp ../CustomMessage/Dockerfile ./
+  286  ls -l
+  287  vim Dockerfile 
+  288  yum install vim htop telnet tcpdump wget net-tools ntp telnet tcpdump traceroute -y
+  289  vim Dockerfile 
+  290  wget http://download.oracle.com/otn-pub/java/jdk/8u111-b14/jdk-8u111-linux-x64.rpm
+  291  wget --no-cookies --no-check-certificate http://download.oracle.com/otn-pub/java/jdk/8u111-b14/jdk-8u111-linux-x64.rpm
+  292  ls -l
+  293  rm -rf jdk-8u111-linux-x64.rpm*
+  294  wget http://download.oracle.com/otn-pub/java/jdk/8u111-b14/jdk-8u111-linux-x64.rpm?AuthParam=1478655842_957f3cc4fd6f6e35fdf02222804d2998
+  295  vim Dockerfile 
+  296  docker build -t centos7/java8:v1 .
+  297  elinks http://download.oracle.com/otn-pub/java/jdk/8u111-b14/jdk-8u111-linux-x64.rpm
+  298  vim Dockerfile 
+  299  docker build -t centos7/java8:v1 .
+  300  vim Dockerfile 
+  301  docker build -t centos7/java8:v1 .
+  302  vim Dockerfile 
+  303  docker build -t centos7/java8:v1 .
+  304  docker run -it centos7/java8:v1 /bin/bash
+  305  vim Dockerfile 
+  306  docker run -it centos7/java8:v2 /bin/bash
+  307  docker build -t centos7/java8:v2 .
+  308  docker run -it centos7/java8:v2 /bin/bash
+  309  cd ..
+  310  mkdir EchoServer
+  311  cd EchoServer/
+  312  cp ../JavaInstall/Dockerfile .
+  313  ls -l
+  314  vim Dockerfile 
+  315  cp ../RunAsUser/Dockerfile .
+  316  vim Dockerfile 
+  317  docker build -t centos7/echoserver:v1 .
+  318  docker images
+  319  docker run centos7/echoserver:v1 
+  320  docker ps -a
+  321  docker logs adoring_torvalds
+  322  cd ..
+  323  mkdir Entry
+  324  cd Em
+  325  cd Entry/
+  326  cp ../EchoServer/Dockerfile .
+  327  vim Dockerfile 
+  328  docker build -t centos7/entry:v1 .
+  329  clear
+  330  docker images
+  331  docker run centos7/entry:v1
+  332  docker run centos7/echo:v1
+  333  docker run centos7/echoserver:v1
+  334  docker run centos7/echoserver:v1 /bin/echo "Hello from the lab"
+  335  docker run centos7/entry:v1 /bin/bash
+  336  docker run centos7/entry:v1 /bin/echo "Will you see me?"
+  337  cd ..
+  338  mkdir ApacheInstall
+  339  cd ApacheInstall/
+  340  vim Dockerfile
+  341  docker build -t centos7/apache:v1 .
+  342  docker images
+  343  docker run -d --name apacheweb1 centos7/apache:v1
+  344  docker ps
+  345  docker inspect apacheweb1
+  346  elinks 172.17.0.3
+  347  docker ps
+  348  docker exec apacheweb1 /bin/cat /var/www/html/index.html
+  349  docker stop apacheweb1
+  350  docker run -d --name apacheweb2 -P centos7/apache:v1
+  351  docker ps 
+  352  docker stop apacheweb2
+  353  vim Dockerfile 
+  354  docker run -d --name apacheweb3 -p 8080:80 centos7/apache:v1
+  355  docker ps
+  356  elinks http://localhost:8080
+  357  docker ps
+  358  docker stop apacheweb3
+  359  docker stop high_montalcini
+  360  vim Dockerfile 
+  361  docker build -t centos7/apache:v2 .
+  362  docker run -d --name apacheweb4 -P centos7/apache:v2
+  363  docker ps
+  364  elinks http://localhost:32768
+  365  clear
+  366  docker stop apacheweb4
+  367  vim Dockerfile 
+  368  cd ..
+  369  ls -l
+  370  docker images
+  371  docker run -it --name voltest1 -v /mydata centos:latest /bin/bash
+  372  ls -l
+  373  cd /var/lib/docker/volumes/95868663ec54086665cf70f414546511319302bd1b3f12376298cb666897bb1e/
+  374  ls -l
+  375  cd _data/
+  376  ls -l
+  377  cd ..
+  378  ls -l
+  379  docker ps
+  380  docker ps -a
+  381  docker inspect voltest1
+  382  cd /
+  383  cd /var/lib/docker/volumes/95868663ec54086665cf70f414546511319302bd1b3f12376298cb666897bb1e/
+  384  ls -l
+  385  cd _data/test.txt 
+  386  cd _data/
+  387  ls -l
+  388  cat test.txt 
+  389  echo "hello from the lab" > host.txt
+  390  cd 
+  391  ls -l
+  392  cd builds/
+  393  ls -l
+  394  docker -ps
+  395  docker ps -a
+  396  docker restart voltest1
+  397  docker attach voltest1
+  398  docker images
+  399  mkdir HostDir
+  400  cd HostDir/
+  401  echo "something" > config.local
+  402  echo "else" > message.txt
+  403  echo "..." > app.bin
+  404  chmod 755 app.bin 
+  405  ls -l
+  406  docker run -it --name voltest1 -v /root/builds/HostDir:/mydata centos:latest /bin/bash
+  407  docker run -it --name voltest2 -v /root/builds/HostDir:/mydata centos:latest /bin/bash
+  408  cd Ho
+  409  cd ..
+  410  ls -l
+  411  cd JavaInstall/
+  412  ls -l
+  413  cat Dockerfile 
+  414  ifconfig
+  415  clear
+  416  docker network inspect ls
+  417  docker network ls
+  418  docker network ls --no-trunc
+  419  docker network inspect bridge
+  420  docker network ls
+  421  docker network inspect host
+  422  clear
+  423  cd 
+  424  clear
+  425  man docker-network-create
+  426  man docker
+  427  man docker-run
+  428  route -n
+  429  docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 mybridge0
+  430  docker network ls
+  431  ifconfig
+  432  docker network inspect mybridge0
+  433  docker network ls
+  434  clear
+  435  docker network ls
+  436  docker network rm mybridge0
+  437  docker network ls
+  438  docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 mybridge01
+  439  docker network ls
+  440  docker network inspect mybridge01
+  441  docker network rm mybridge01
+  442  docker network create --subnet 10.1.0.0/16 --gateway 10.1.0.1 --ip-range=10.1.4.0/24 --driver=bridge --label=host4network bridge04
+  443  docker network inspect bridge04
+  444  ifconfig
+  445  rou te-n
+  446  route -n
+  447  docker network ls
+  448  docker network inspect bridge04
+  449  docker run -it --name nettest1 --net bridge04 centos:latest /bin/bash
+  450  ifconfig
+  451  clear
+  452  docker run -it --name nettest2 --net bridge04 --ip 10.1.0.100 centos:latest /bin/bash
+  453  docker ps -a
+  454  docker restart pensive_galileo
+  455  docker ps
+  456  docker exec pensive_galileo ifconfig
+  457  docker exec pensive_galileo /bin/ifconfig
+  458  docker exec pensive_galileo /bin/ps 
+  459  docker exec pensive_galileo /bin/w
+  460  docker exec pensive_galileo /bin/ps -aux
+  461  docker top pensive_galileo
+  462  docker exec pensive_galileo /bin/top
+  463  docker exec -i -t pensive_galileo /bin/bash
+  464  docker ps
+  465  docker top pensive_galileo
+  466  docker exec -i -t pensive_galileo /bin/yum update -y
+  467  history
+  468  docker exec -u 0 -i -t pensive_galileo /bin/yum update -y
+  469  docker exec -u 0 -i -t pensive_galileo /bin/yum install python -y
+  470  docker exec -u 0 -i -t pensive_galileo /bin/yum install httpd -y
+  471  docker exec -it pensive_galileo /bin/bash
+  472  docker exec -u 0 -it pensive_galileo /bin/bash
+  473  docker log pensive_galileo
+  474  docker logs pensive_galileo
+  475  docker logs -u 0 pensive_galileo
+  476  docker ps -a -q | wc -l
+  477  docker ps -a
+  478  docker rm 0df65eaa4036 3ac034220260 c04001139f2f
+  479  docker ps -a
+  480  docker login
+  481  docker ps -aq
+  482  docker ps -a
+  483  docker ps -aq
+  484  docker ps -a
+  485  clear
+  486  docker ps -a
+  487  docker pull lucamasiero:awscli 
+  488  docker pull lucamasiero/awscli:probe
+  489  docker pull lucamasiero/awscli
+  490  docker push lucasmasiero/awscli:probe
+  491  docker pull lucasmasiero/awscli:probe
+  492  docker events --since '1h'
+  493  cd /var/lib/docker/
+  494  ls -l
+  495  docker ps
+  496  docker events --filter event=attach
+  497  clear
+  498  docker top
+  499  docker ps
+  500  docker top pensive_galileo
+  501  docker stats pensive_galileo
+  502  docker pull ubuntu:xenial
+  503  docker images
+  504  cd /var/lib/docker/
+  505  ls -l
+  506  cd containers/
+  507  ls -l
+  508  docker ps -a
+  509  ls -l
+  510  ls da6b7cc16da3*
+  511  rm -rf da6b7cc16da3*
+  512  ls da6b7cc16da3*
+  513  docker ps -a
+  514  service docker restart
+  515  docker ps -a
+  516  clear
+  517  cd
+  518  clear
+  519  docker ps -a
+  520  docker rename 3f9344f1aca6 echosrv1
+  521  docker ps -a
+  522  clear
+  523  docker run -it ubuntu:latest /bin/bash
+  524  docker run -it ubuntu:xenial /bin/bash
+  525  docker run -it --name testcont1  ubuntu:xenial /bin/bash 
+  526  docker ps 
+  527  docker ps -a
+  528  docker attach testcont1
+  529  docker restart testcont1
+  530  docker attach testcont1
+  531  docker restart testcont1
+  532  docker attach testcont1
+  533  docker restart testcont1
+  534  docker attach testcont1
+  535  docker restart testcont1
+  536  docker exec testcont1 /bin/bash
+  537  docker exec -it testcont1 /bin/bash
+  538  ps -a
+  539  docker ps -a
+  540  docker ps
+  541  docker save --output centos.latest.tar centos:latest
+  542  ls -l
+  543  docker load --input centos.latest.tar 
+  544  clear
+  545  docker images
+  546  docker history centos7/java8
+  547  docker history 12207a2b5c92
+  548  docker history --no-trunc 12207a2b5c92
+  549  clear
+  550  docker images
+  551  docker tag 0584b3d2cf6d mine/centos7
+  552  docker images
+  553  docker tag 0584b3d2cf6d mine/centos7:v1
+  554  docker images
+  555  docker ps
+  556  elinks 172.17.0.2
+  557  elinks 172.17.0.3
+  558  docker ps 
+  559  docker stop gloomy_spence evil_roentgen
+  560  cd build-lab/
+  561  sl -l
+  562  ls -l
+  563  cd WebNode/
+  564  ls -l
+  565  vim Dockerfile 
+  566  cd ../Entry/
+  567  vim Dockerfile 
+  568  cd ../WebNode/
+  569  vim Dockerfile 
+  570  docker images
+  571  docker rmi 12680f7bea2c 0b261d612525 8753179f5e0b
+  572  docker rmi
+  573  docker images
+  574  docker build -t lucasmasiero:webserver:v3 .
+  575  docker build -t lucasmasiero/webserver:v3 .
+  576  docker run lucasmasiero/webserver:v3
+  577  docker ps
+  578  vi Dockerfile 
+  579  vim Dockerfile 
+  580  docker build -t lucasmasiero/webserver:v3 .
+  581  docker ps -a
+  582  docker rm $(docker ps -a -q)
+  583  docker run lucasmasiero/webserver:v3
+  584  vi Dockerfile 
+  585  docker build -t lucasmasiero/webserver:v3 .
+  586  docker ps -a
+  587  docker rm $(docker ps -a -q)
+  588  docker run --name=node1 lucasmasiero/webserver:v3
+  589  docker ps
+  590  docker ps -a
+  591  docker logs node1
+  592  docker history node1
+  593  docker restart node1
+  594  docekr ps
+  595  docker ps
+  596  docker history node1
+  597  docker rm node1
+  598  vi Dockerfile 
+  599  docker build -t lucasmasiero/webserver:v3 .
+  600  docker run --name=node1 lucasmasiero/webserver:v3
+  601  vi Dockerfile 
+  602  docker build -t lucasmasiero/webserver:v3 .
+  603  docker rm node1
+  604  docker run --name=node1 lucasmasiero/webserver:v3
+  605  docker ps
+  606  vi Dockerfile 
+  607  vi start.sh
+  608  vi Dockerfile 
+  609  docker build -t lucasmasiero/webserver:v3 .
+  610  docker rm node1
+  611  docker run --name=node1 lucasmasiero/webserver:v3
+  612  vi start.sh 
+  613  docker build -t lucasmasiero/webserver:v3 .
+  614  docker ps -a
+  615  docker rm node1
+  616  docker run --name=node1 lucasmasiero/webserver:v3
+  617  docker logs
+  618  docker ps
+  619  docker logs dreamy_ride
+  620  docker stats dreamy_ride
+  621  docker top dreamy_ride
+  622  docker ps
+  623  docker stop node1
+  624  cd build-lab/WebNode/
+  625  vim start.sh 
+  626  docker build -t lucasmasiero/webserver:v3 .
+  627  docker run --name node1 lucasmasiero/webserver:v3 
+  628  docker rm node1
+  629  docker run --name node1 lucasmasiero/webserver:v3 
+  630  docker stop node1
+  631  docker restart node1
+  632  docker ps
+  633  docker attach node1
+  634  docker ps
+  635  docker exec -u 0 node1 /bin/bash
+  636  docker stop node1
+  637  cd build-lab/WebNode/
+  638  ls -l
+  639  vim Dockerfile 
+  640  docker build -t lucasmasiero/webserver:v3 .
+  641  docker run --name node1 lucasmasiero/webserver:v3 
+  642  docker rm node1
+  643  docker run --name node1 lucasmasiero/webserver:v3 
+  644  vim Dockerfile 
+  645  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  646  docker rm node1
+  647  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  648  docker ps
+  649  vim Dockerfile 
+  650  docker build -t lucasmasiero/webserver:v3 .
+  651  docker rm node1
+  652  ls -l
+  653  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  654  docker ps
+  655  docker ps -a
+  656  docker rm node1
+  657  vi Dockerfile 
+  658  docker build -t lucasmasiero/webserver:v3 .
+  659  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  660  vi Dockerfile 
+  661  docker build -t lucasmasiero/webserver:v3 .
+  662  docker rm node1
+  663  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  664  docker rm node1
+  665  cd ..
+  666  ls -l
+  667  cd ApacheInstall/
+  668  ls -l
+  669  vim Dockerfile 
+  670  docker build -t lucasmasiero/webserver:v3 .
+  671  docker run --name node1 lucasmasiero/webserver:v3 /bin/bash
+  672  clear
+  673  docker images
+  674  docker ps -a
+  675  docker restart fac2adf9489
+  676  docker ps 
+  677  docker exec -it cranky_snyder /bin/bash
+  678  docker exec -ti fac2adf94893 /bin/bash
+  679  docker exec -i -t fac2adf94893 /bin/bash
+  680  docker ps 
+  681  docker attach fac2adf94893
+  682  docker commit fac2adf94893 centos6:baseweb
+  683  clear
+  684  docker images
+  685  docker run -i -t centos6:baseweb /bin/bash
+  686  docker ps -a
+  687  docker rm silly_curie
+  688  docker restart cranky_snyder
+  689  docker attach cranky_snyder 
+  690  docker run -i -t --name baseweb1 centos6:baseweb /bin/bash
+  691  wget http://static.oswd.org/designs/3682/bluefreedom3.zip
+  692  ls
+  693  ls -l
+  694  mkdir docker
+  695  cd docker/
+  696  cd dockerwww
+  697  mkdir dockerwww
+  698  cd dockerwww/
+  699  cd 
+  700  yum install unzip -y
+  701  unzip bluefreedom3.zip 
+  702  cd bluefreedom3
+  703  ls -l
+  704  mv * ../docker/dockerwww/
+  705  ls -l
+  706  cd ..
+  707  cd docker/dockerwww/
+  708  ls -l
+  709  cd /
+  710  cd 
+  711  docker run -i -t --name=webtest centos6:baseweb /bin/bash
+  712  ls -l
+  713  cd docker/dockerwww/
+  714  docker ps -a
+  715  docker rm webtest baseweb1 baseweb1
+  716  docker ps -a
+  717  docker rm cranky_snyder
+  718  docker run --name=webtest -v /root/docker/dockerwww:/var/www/html -i -t centos6:baseweb /bin/bash
+  719  cd 
+  720  cd ..s
+  721  cd .ssh/
+  722  ls -l
+  723  ssh-keygen 
+  724  ls -l
+  725  cat docker-lab.pub 
+  726  ls -l
+  727  mv id_rsa dummy_server
+  728  mv id_rsa.pub dummy_server.pub
+  729  cat dummy_server
+  730  ls -l
+  731  chmod 544 dummy_server
+  732  cd 
+  733  cd build-lab/WebNode/
+  734  history
+  735  ls -l
+  736  docker build -t lucasmasiero/webserver:v1 .
+  737  cd
+  738  wget https://github-cloud.s3.amazonaws.com/releases/46929625/0251ed02-9495-11e6-9cda-37a8e30354a6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20161109T205612Z&X-Amz-Expires=300&X-Amz-Signature=8241653d9e193262e71d2dcd44847ea9ddd1aef2c06aa90798e2d2cf82522d14&X-Amz-SignedHeaders=host&actor_id=14300055&response-content-disposition=attachment%3B%20filename%3Dhabitus_linux_amd64&response-content-type=application%2Foctet-stream
+  739  ls -l
+  740  wget https://github.com/cloud66/habitus/releases/download/v0.4.7/habitus_linux_amd64
+  741  ls -l
+  742  chmod 755 habitus_linux_amd64 
+  743  ./habitus_linux_amd64 
+  744  mv habitus_linux_amd64 /bin/habitus
+  745  habitus
+  746  cd build-lab/WebNode/
+  747  ls -l
+  748  vim build.yml
+  749  chmod 600 /root/.ssh/dummy_server
+  750  vim Dockerfile 
+  751  docker build -t lucasmasiero/webserver:v1 .
+  752  habitus --build host=192.168.100.10
+  753  vim build.yml
+  754  habitus --build host=192.168.100.10
+  755  vim build.yml
+  756  habitus --build host=192.168.100.10
+  757  cd 
+  758  docker images
+  759  cd build-lab/
+  760  ls -l
+  761  cd WebNode/
+  762  ls -l
+  763  vim Dockerfile 
+  764  docker build -t lucasmasiero/webserver:v1 .
+  765  vim Dockerfile 
+  766  docker build -t lucasmasiero/webserver:v1 .
+  767  vim Dockerfile 
+  768  docker build -t lucasmasiero/webserver:v1 .
+  769  docker images
+  770  docker rmi dcf9aeb1ad2d e35edc1fb70a
+  771  docker images
+  772  docker run -it lucasmasiero/webserver:v1 /bin/bash
+  773  docker ps -a
+  774  docker rm small_tesla silly_wright zen_galileo
+  775  docker ps
+  776  docker ps -a
+  777  vi Dockerfile 
+  778  docker run -d lucasmasiero/webserver:v1
+  779  docker ps
+  780  docker ps -a
+  781  docker start peaceful_kare
+  782  docker ps
+  783  docker ps -a
+  784  docker rm $(docker ps -a -q)
+  785  dcker run -it lucasmasiero/webserver:v1 /bin/bash
+  786  docker run -it lucasmasiero/webserver:v1 /bin/bash
+  787  docker ps -a
+  788  docker exec -u 0 high_meitner /bin/bash
+  789  docker restart high_meitner
+  790  docker exec -u 0 high_meitner /bin/bash
+  791  docker ps
+  792  vi Dockerfile 
+  793  docker build -t lucasmasiero/webserver:v2 .
+  794  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  795  vi Dockerfile 
+  796  docker build -t lucasmasiero/webserver:v2 .
+  797  docker rm $(docker ps -a -q)
+  798  docker ps 
+  799  docker stop high_meitner
+  800  docker rm $(docker ps -a -q)
+  801  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  802  vi Dockerfile 
+  803  docker build -t lucasmasiero/webserver:v2 .
+  804  docker rm $(docker ps -a -q)
+  805  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  806  docker rm $(docker ps -a -q)
+  807  vi Dockerfile 
+  808  docker build -t lucasmasiero/webserver:v2 .
+  809  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  810  which httpd
+  811  yum install httpd -y
+  812  which httpd
+  813  vi Dockerfile 
+  814  docker build -t lucasmasiero/webserver:v2 .
+  815  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  816  docker ps -a
+  817  docker start
+  818  docker start evil_roentgen
+  819  docker run lucasmasiero/webserver:v2 
+  820  docker ps
+  821  docker run -it lucasmasiero/webserver:v2 /bin/bash
+  822  docker ps
+  823  docker ps -a
+  824  docker restart gloomy_spence
+  825  docker ps
+  826  docker rm lonely_galileo focused_keller
+  827  docker ps
+  828  man docker-run
+  829  man docker-eec
+  830  man docker-exec
+  831  docker stop node1
+  832  docker rm node1
+  833  docker images
+  834  docker rmi 34fc1d50ddce d4d5c391efb8 a477c2ad4977 60a42e15af51 c413b2df0a92 382c00439d13 01272d843f1a fecba1177d84 ff703a2224c9 0924e8373238 5861f24657f7
+  835  docker images
+  836  docker rmidcf9aeb1ad2d
+  837  docker rmi dcf9aeb1ad2d
+  838  docker images
+  839  clear
+  840  cd We
+  841  cd b
+  842  cd build-lab/
+  843  cd WebNode/
+  844  ls -l
+  845  vim Dockerfile 
+  846  vi ../Entry/Dockerfile 
+  847  vi ../ApacheInstall/Dockerfile 
+  848  vim Dockerfile 
+  849  docker build -t lucasmasiero/webserver:v3 .
+  850  docker run -d lucasmasiero/webserver:v3 
+  851  docker ps
+  852  docker rm 7217923b4d4f
+  853  docker stop 7217923b4d4f
+  854  docker rm 7217923b4d4f
+  855  docker run -d --name node1 lucasmasiero/webserver:v3 
+  856  docker ps
+  857  docker exec node1 /bin/bash
+  858  docker exec -it node1 /bin/bash
+  859  docker ps
+  860  docker inspect node1
+  861  docker exec -it node1 /bin/bash
+  862  elinks 172.17.0.2
+  863  docker login
+  864  docker commit lucasmasiero/webserver:v3
+  865  docker images
+  866  docker rmi deaf93ecf9d4 
+  867  docker images
+  868  docker ps
+  869  docker tag 739209f6957d lucasmasiero/webserver:latest
+  870  docker push lucasmasiero/webserver
+  871  docker stop node1
+  872  cd build-lab/
+  873  ls -l
+  874  git init .
+  875  git status
+  876  git add *
+  877  git status
+  878  git commit -m "first commit"
+  879  git remote add origin git@github.com:lmasiero/docker-labs.git
+  880  git push -u origin master
+  881  cat /root/.ssh/dummy_server
+  882  cat /root/.ssh/dummy_server.pub 
+  883  git remote add origin git@github.com:lmasiero/docker-labs.git
+  884  git push -u origin master
+  885  cd .ss
+  886  cat /root/.ssh/docker-lab.pub 
+  887  git push -u origin master
+  888  man git
+  889  man git-push
+  890  git config
+  891  git remode del origin
+  892  git remote del origin
+  893  git remote remove
+  894  git remote remove origini
+  895  git remote remove origin
+  896  git remote add origin https://github.com/lmasiero/docker-labs.git
+  897  git push master origin
+  898  cat /root/.ssh/dummy_server.pub 
+  899  git push master origin
+  900  git remote remove origin
+  901  git commit -m "first commit"
+  902  git remote add origin git@github.com:lmasiero/docker-labs.git
+  903  git push -u origin master
+  904  git remote -v
+  905  ssh-add /root/.ssh/dummy_server
+  906  eval "$(ssh-agent)"
+  907  ssh-add /root/.ssh/dummy_server
+  908  git push -u origin master
+  909  clear
+  910  yum install ntp -y 
+  911  ping 192.168.100.1
+  912  yum install ntp -y 
+  913  clear
+  914  yum install ntp -y 
+  915  clear
+  916  ping 8.8.8.8
+  917  route -n
+  918  service network restart
+  919  ping 8.8.8.8
+  920  clear
+  921  yum install -y ntp 
+  922  clear
+  923  vi /etc/resolv.conf 
+  924  ping google.com
+  925  ping 8.8.8.8
+  926  nslookup 8.8.8.8
+  927  vi /etc/resolv.conf 
+  928  ping google.com
+  929  service network restart
+  930  ping google.com
+  931  yum install ntp -y
+  932  ping terra.com.br
+  933  clear
+  934  yum install ntp -y
+  935  ntpdate pool.ntp.org
+  936  timedatectl set-timezone America/Sao_Paulo
+  937  ntpdate pool.ntp.org
+  938  date
+  939  clear
+  940  systemctl enable ntpd
+  941  systemctl start ntpd
+  942  vi /etc/hosts
+  943  vim /etc/yum.repos.d/virt7-docker-common-release.repo
+  944  yum install centos-release-scl epel-release  –y
+  945  n
+  946  clear
+  947  rm -rf /etc/yum.repos.d/virt7-docker-common-release.repo 
+  948  yum install centos-release-scl epel-release  –y
+  949  yum install -y vim htop telnet tcpdump wget net-tools ntp telnet tcpdump traceroute
+  950  clear
+  951  vim /etc/yum.repos.d/virt7-docker-common-release.repo
+  952  yum update
+  953  cat /root/.ssh/authorized_keys 
+  954  exit
+  955  cd /etc/kubernetes/
+  956  ls -l
+  957  vim config 
+  958  cat /etc/hosts
+  959  ifconfig
+  960  vim config 
+  961  cd /etc/etcd/
+  962  ls -l
+  963  vim etcd.conf 
+  964  vim /etc/etcd/etcd.conf 
+  965  vim /etc/kubernetes/apiserver 
+  966  systemctl enable etd kube-apiserver kube-controller-manager kube-scheduler
+  967  systemctl enable etcd kube-apiserver kube-controller-manager kube-scheduler
+  968  systemctl start etcd kube-apiserver kube-controller-manager kube-scheduler
+  969  systemctl status etcd kube-apiserver kube-controller-manager kube-scheduler
+  970  systemctl status etcd kube-apiserver kube-controller-manager kube-scheduler | grep running | wc -l
+  971  clear
+  972  man kubectl
+  973  kubectl get 
+  974  kubectl get nodes
+  975  man kubectl-get
+  976  kubectl get rc,services
+  977  man kubectl-get
+  978  kubectl get nodes
+  979  kubectl describe nodes
+  980  kubectl get nodes -o jsonpath='{.items[*].status.addesses.[?(@type=="ExternalIP")].address}'
+  981  kubectl get nodes -o jsonpath='{.items[*].status.addesses.[?(@.type=="ExternalIP")].address}'
+  982  kubectl get nodes -o jsonpath='{.items[*].status.addesses[?(@.type=="ExternalIP")].address}'
+  983  kubectl get nodes -o jsonpath='{.items[*].status.adresses[?(@.type=="ExternalIP")].address}'
+  984  kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="ExternalIP")].address}'
+  985  kubectl get nodes -o jsonpath=‘{range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}’| tr ‘;’ “\n” | grep “Ready=True”
+  986  kubectl get nodes -o jsonpath={range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}’| tr ‘;’ “\n” | grep “Ready=True”
+  987  kubectl get nodes -o jsonpath='{range .items[*]}{@.metadata.name}:{range @.status.conditions[*]}{@.type}={@.status};{end}{end}'| tr ';' "\n" | grep "Ready=True"
+  988  kubectl get nodes
+  989  kubectl get pods
+  990  cd 
+  991  cd build-lab/
+  992  ls -l
+  993  cd ..
+  994  mv build-lab/ docker-build-lab
+  995  mkdir kube-build-lab
+  996  cd kube-build-lab/
+  997  ls -l
+  998  vim nginx.yml
+  999  kubectl get pods
+ 1000  kubectl create -f ./nginx.yml 
+ 1001  kubectl get pods
+ 1002  kubectl describe pod nginx
+ 1003  cat nginx.yml 
+ 1004  kubectl describe pod nginx
+ 1005  ping 172.17.0.2
+ 1006  clear
+ 1007  kubectl run busybux --image=busybox --restart=Never --tty -i -generator=run-pod/v1
+ 1008  kubectl run busybux --image=busybox --restart=Never --tty -i --generator=run-pod/v1
+ 1009  kubectl delete pod busybox
+ 1010  kubectl get pods
+ 1011  kubectl delete pod nginx
+ 1012  kubectl get pods
+ 1013  kubectl create -f ./nginx.yml 
+ 1014  kubectl port-forward nginx :80 & 
+ 1015  wget -qO http://localhost:40273
+ 1016  man wget
+ 1017  wget  http://localhost:40273
+ 1018  cat index.html 
+ 1019  kubectl get pods
+ 1020  kubectl delete pod nginx
+ 1021  cp nginx.yml nginx-pod-label.yml
+ 1022  vim nginx-pod-label.yml 
+ 1023  kubectl create -f ./nginx-pod-label.yml 
+ 1024  kubectl get pod
+ 1025  kubectl get pods
+ 1026  docker ps
+ 1027  kubectl get pods -l app=nginx
+ 1028  cp nginx-pod-label.yml nginx2-pod-label.yml
+ 1029  vi nginx2-pod-label.yml 
+ 1030  kubectl create -f nginx2-pod-label.yml 
+ 1031  kubectl get pods
+ 1032  kubectl get pods -l app=nginx2
+ 1033  kubectl describe pods -l app=nginx2
+ 1034  cp nginx-pod-label.yml nginx-deployment.yml
+ 1035  vi nginx-deployment.yml 
+ 1036  vim nginx-deployment.yml 
+ 1037  kubectl create -f ./nginx-deployment.yml 
+ 1038  vim nginx-deployment.yml 
+ 1039  kubectl create --validate=false -f ./nginx-deployment.yml 
+ 1040  vim nginx-deployment.yml 
+ 1041  kubectl create -f ./nginx-deployment.yml 
+ 1042  vim nginx-deployment.yml 
+ 1043  kubectl create -f ./nginx-deployment.yml 
+ 1044  cat nginx-deployment.yml 
+ 1045  kubectl get pods
+ 1046  kubectl get deployments
+ 1047  cp nginx-deployment.yml nginx-deployment-dev.yml
+ 1048  vi nginx-deployment-dev.yml 
+ 1049  kubectl create -f ./nginx-deployment-dev.yml 
+ 1050  kubectl get deployments
+ 1051  kubectl describe deployments -l app=nginx-deployment-dev
+ 1052  history
+ 1053  cat nginx-deployment-dev.yml 
+ 1054  cp nginx-deployment-dev.yml nginx-deployment-dev-update.yml
+ 1055  vim nginx-deployment-dev-update.yml 
+ 1056  kubectl apply -f nginx-deployment-dev-update.yml 
+ 1057  kubectl get pods
+ 1058  cat nginx-deployment-dev-update.yml 
+ 1059  clear
+ 1060  kubectl describe deployments -l app=nginx-deployments-dev
+ 1061  kubectl describe deployments -l app=nginx-deployment-dev
+ 1062  kubectl 
+ 1063  kubectl get pods
+ 1064  kubectl delete nginx-deployment-dev-104434401-6avag nginx-deployment-prod-3051195443-sc0ux nginx nginx2
+ 1065  kubectl delete pods nginx-deployment-dev-104434401-6avag nginx-deployment-prod-3051195443-sc0ux nginx nginx2
+ 1066  kubectl get pods
+ 1067  clear
+ 1068  kubectl get pods
+ 1069  kubectl delete deployment nginx-deployment-dev-104434401-udn54
+ 1070  kubectl get pods
+ 1071  kubectl describe deployments
+ 1072  kubectl delete deployments nginx-deployment-dev nginx-deployment-prod
+ 1073  cd ..
+ 1074  ls -l
+ 1075  mv docker-build-lab/ build-lab
+ 1076  cd build-lab/
+ 1077  ls -l
+ 1078  mkdir docker-labs
+ 1079  mkdir kubernetes-lab
+ 1080  mv docker-labs/ docker-lab
+ 1081  ls -l
+ 1082  mv ApacheInstall/ CustomMessage/ EchoServer/ Entry/ HostDir/ JavaInstall/ RunAsUser/ WebNode/ docker-lab/
+ 1083  ls -l
+ 1084  ls docker-lab/*
+ 1085  ls docker-lab
+ 1086  ls -l
+ 1087  cd ..
+ 1088  ls -l
+ 1089  mv kube-build-lab/* build-lab/kubernetes-lab/
+ 1090  ls -l
+ 1091  cd kube-build-lab/
+ 1092  ls -l
+ 1093  rm -rf 
+ 1094  cd ../build-lab/kubernetes-lab/
+ 1095  ls -l
+ 1096  cd ..
+ 1097  ls -l
+ 1098  history > hystory-20161112.txt
