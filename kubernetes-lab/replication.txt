@@ -1,0 +1,20 @@
+  120  kubectl get pods
+  121  clear
+  122  cd kubernetes-lab/
+  123  ls -l
+  124  vim nginx-multi-label.yml
+  125  kubectl get nodes
+  126  kubectl create -f nginx-multi-label.yml 
+  127  vi nginx-multi-label.yml 
+  128  vim nginx-multi-label.yml 
+  129  kubectl create -f nginx-multi-label.yml 
+  130  kubectl get pods
+  131  kubectl get replicationcontrollers
+  132  kubectl describe pods
+  133  kubectl get services
+  134  clear
+  135  kubectl get replicationcontrollers
+  136  kubectl delete replicationcontroller nginx-www
+  137  history
+  138  cat nginx-multi-label.yml 
+  139  history > replication.txt
